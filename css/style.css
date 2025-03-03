@@ -7,14 +7,18 @@ body {
     padding: 0;
 }
 
+header {
+    background: #262336;
+}
+
 /*banner*/
 
 .banner {
     display: flex;
     justify-content: space-between;
-    background: #262336;
     padding: 3rem;
-    color: #545454;
+    color: #6f6c89;
+    border-bottom: 1px solid #2d2a3d;
 
     & .logo {
         display: flex;
@@ -25,14 +29,134 @@ body {
             width: 110px;
         }
 
-        & .text {
-            
+        & .text > h1, p {
+            margin: 0;
+            padding-left: 1rem;
+            background: linear-gradient(#c9c8cf, #3f3f3f);
+            background-clip: text;
+            color: transparent;
         }
+    }
+
+    & a, ul{
+        text-decoration: none;
+        color: #6f6c89;
+        padding-left: 2rem;
+        margin: 0;
+    }
+}
+
+.navigation {
+    align-content: end;
+}
+
+/*under-banner*/
+
+.customerSupport {
+    text-align: center;
+    max-width: 60vw;
+    justify-self: center;
+    background: #262336;
+    color: white;
+    padding-bottom: 9rem;
+
+    & h1 {
+        font-size: clamp(2.5rem, 5vw, 5rem);
+        margin: 1rem;
+    }
+
+    & h2 {
+        font-size: clamp(2rem, 4vw, 4rem);
+        background: linear-gradient(#c9c8cf, #3f3f3f);
+        background-clip: text;
+        color: transparent;
+        margin: 1rem;
     }
 
     & a {
         text-decoration: none;
-        color: #545454;
-        padding-left: 2rem;
+        color: #fff;
+        padding: 12px;
+        background: linear-gradient(#817b9b, #6b6780);
+        border-radius: 4px;
     }
+}
+
+/*Orange*/
+
+.about {
+    background: #f29b66;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+    padding: 1rem;
+
+    & .control {
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        flex-direction: column;
+        width: 20vw;
+    }
+
+    & img {
+        width: 7rem;
+        border-radius: 100%;
+    }
+
+    & h4, h5 {
+        margin: 5px;
+    }
+}
+
+/*Hosting*/
+
+.hosting {
+    background: #e8e8ea;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 1rem;
+
+    & .Hosting {
+        border: 2px solid #beb7c0;
+        border-radius: 10px 10px 0px 0px;
+
+        & p {
+            padding: 1rem;
+            margin: 0;
+        }
+
+        & :nth-child(1), .price {
+            background: #6f6c89;
+            margin: 0;
+            padding: 1rem;
+            border: 2px solid #beb7c0;
+
+            & span {
+                padding: 0;
+                border: none;
+                background: linear-gradient(#ff7920, #c5531e);
+                background-clip: text;
+                color: transparent;
+            }
+        }
+
+        .one, .three {
+            background: #fff;
+        }
+
+        .button {
+            background: #fff;
+        }
+    }
+}
+
+.services {
+    display: flex;
+    justify-content: space-evenly;
+    background: #262336;
+    color: #c9c8cf;
+    padding: 1rem;
 }
