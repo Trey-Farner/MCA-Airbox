@@ -121,37 +121,59 @@ header {
     padding: 1rem;
 
     & .Hosting {
-        background: #c9c8cf;
-        border: 2px solid black;
+        background: #6f6c89;
+        border: 2px solid #e2dada;
         border-radius: 5px 5px 0 0;
         width: 20vw;
         min-width: 200px;
-        
-        & .grey {
-            background: #3f3f3f;
-            padding: 25px;
-        }
-
-        & .white {
-            background: #e8e8ea;
-        }
-
-        & .white, .dark {
-            padding: 15px;
-        }
-
-        & .grey, .white, .dark {
-            border: 2px solid #2d2a3d;
-        }
-
-        & button {
-            background: #f29b66;
-            color: #e8e8ea;
-            padding: 5px;
-            border: none;
-            border-radius: 5px;
-        }
+        color: #818181;
     }
+}
+        
+.grey {
+    padding: 25px;
+    color: #fff;
+    font-size: larger;
+}
+
+.grey span {
+    background: linear-gradient(#f28e57, #e55b2f);
+    background-clip: text;
+    color: transparent;
+    font-size: medium;
+}
+
+.white {
+    background: #fff;
+}
+
+.dark {
+    background: #f5f0f0;
+}
+
+.white, .dark {
+    padding: 15px;
+}
+
+.grey, .white, .dark {
+    border: 2px solid #e2dada;
+}
+
+button {
+    background: linear-gradient(#f28e57, #e55b2f);
+    color: #e8e8ea;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    width: 100px;
+}
+
+.title {
+    background: linear-gradient(#fff, #222);
+    background-clip: text;
+    color: transparent;
+    font-size: x-large;
 }
 
 /*services*/
@@ -177,5 +199,43 @@ header {
         background: linear-gradient(#c9c8cf, #3f3f3f);
         background-clip: text;
         color: transparent;
+        padding: 1rem 1rem 1rem 0;
     }
+
+    & ul {
+        padding: 0 1rem 1rem 3rem;
+    }
+
+    & p {
+        color: #b4b2bd;
+        padding-bottom: 1rem;
+    }
+}
+
+/*sponsors*/
+
+.sponsors {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 1rem;
+    background: #322f40;
+}
+
+.sponsors img {
+    width: 20vw;
+    min-width: 150px;
+    max-width: 300px;
+}
+
+/*footer*/
+
+.footer {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background: #1a1921;
+    color: #544f70;
 }
