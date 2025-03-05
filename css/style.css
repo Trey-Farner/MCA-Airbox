@@ -2,6 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 header {
@@ -9,6 +10,28 @@ header {
 }
 
 /*banner*/
+
+.menu {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        display: flex;
+        align-self: start;
+        justify-self: start;
+        background: #262336;
+        border: none;
+    }
+
+    .menuIcon {
+        width: 4rem;
+    }
+
+    .navigation {
+        display: none;
+    }
+}
 
 .banner {
     display: flex;
@@ -70,12 +93,15 @@ header {
         margin: 1rem;
     }
 
-    & a {
+    & button {
         text-decoration: none;
         color: #fff;
-        padding: 12px;
+        padding: 15px 12px;
+        margin-top: 15px;
         background: linear-gradient(#817b9b, #6b6780);
+        border: none;
         border-radius: 4px;
+        font-size: 1.5 rem;
     }
 }
 
@@ -104,8 +130,16 @@ header {
         border-radius: 100%;
     }
 
-    & h4, h5 {
-        margin: 5px;
+    h5 {
+        font-size: 2rem;
+        background: linear-gradient(#e3e1eb, #c2c2c2);
+        background-clip: text;
+        color: transparent;
+    }
+
+    h4 {
+        font-size: 2.5rem;
+        color: #fff;
     }
 }
 
@@ -128,6 +162,19 @@ header {
         min-width: 200px;
         color: #818181;
     }
+}
+
+.arrow {
+    height: 50px;
+    width: 50px;
+    background: #6f6c89;
+    border-radius: 20px 0 0 0;
+    rotate: 45deg;
+    justify-self: center;
+}
+
+.price {
+    height: 90px;
 }
         
 .grey {
@@ -159,7 +206,7 @@ header {
     border: 2px solid #e2dada;
 }
 
-button {
+.signUp, .shopNow {
     background: linear-gradient(#f28e57, #e55b2f);
     color: #e8e8ea;
     padding: 5px;
@@ -173,7 +220,8 @@ button {
     background: linear-gradient(#fff, #222);
     background-clip: text;
     color: transparent;
-    font-size: x-large;
+    font-size: 2rem;
+    border-radius: 5px 5px 0 0;
 }
 
 /*services*/
@@ -234,8 +282,33 @@ button {
 
 .footer {
     display: flex;
-    justify-content: left;
+    justify-content: space-between;
     align-items: center;
+    padding: 2rem;
     background: #1a1921;
-    color: #544f70;
+    color: #34374D;
+}
+
+.box1 {
+    display: flex;
+    align-items: center;
+}
+
+.bottomLogo {
+    width: 3vw;
+    max-width: 100px;
+    min-width: 38px;
+    border-radius: 10px;
+}
+
+.copyright, .companyName {
+    padding-left: 1rem;
+
+    & span {
+        color: #656A86;
+    }
+}
+
+.socials .icons {
+    width: 30px;
 }

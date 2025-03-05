@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chocolate+Classical+Sans&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Airbox</title>
 </head>
 <body>
     <header role="banner">
         <div class="banner">
+            <button class="menu">
+                <img src="./images/menu icon.png" alt="menu icon" class="menuIcon">
+            </button>
+
             <div class="logo">
                 <img src="./images/logo.png" alt="O squared; the Airbox logo">
                 <div class="text">
@@ -33,7 +38,7 @@
             <h1>Customer Support</h1>
             <h2>For all our clients</h2>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae quam tenetur omnis ipsum odio, optio itaque voluptatibus aperiam, vel sed distinctio error. Inventore repellat quo rerum commodi laborum explicabo eos.</p>
-            <a href="#">Try Now</a>
+            <button>Try Now</button>
         </div>
     </header>
 
@@ -68,50 +73,58 @@
         <div class="hosting">
             <div class="mini Hosting">
                 <h2 class="grey title">Mini Hosting</h2>
-                <p class="price grey">$10.99 <span>/MO</span>
-                </p>
+                <div class="price grey">
+                    $10.99 <span>/MO</span>
+                    <div class="arrow"></div>
+                </div>
                 <p class="white">4 GB SPACE</p>
                 <p class="dark descriptor">20 GB BANDWIDTH</p>
                 <p class="white">100 EMAIL ACCOUNTS</p>
                 <p class="dark descriptor">PHP,ROR,MYSQL</p>
                 <div class="white">
-                    <button type="button">Sign Up</button>
+                    <button type="button" class="signUp">Sign Up</button>
                 </div>
             </div>
             <div class="user Hosting">
                 <h2 class="grey title">User Hosting</h2>
-                <p class="price grey">$10.99 <span>/MO</span>
-                </p>
+                <div class="price grey">
+                    $10.99 <span>/MO</span>
+                    <div class="arrow"></div>
+                </div>
                 <p class="white">4 GB SPACE</p>
                 <p class="dark descriptor">20 GB BANDWIDTH</p>
                 <p class="white">100 EMAIL ACCOUNTS</p>
                 <p class="dark descriptor">PHP,ROR,MYSQL</p>
                 <div class="white">
-                    <button type="button">Sign Up</button>
+                    <button type="button" class="signUp">Sign Up</button>
                 </div>
             </div>
             <div class="pro Hosting">
                 <h2 class="grey title">Pro Hosting</h2>
-                <p class="price grey">$10.99 <span>/MO</span>
-                </p>
+                <div class="price grey">
+                    $10.99 <span>/MO</span>
+                    <div class="arrow"></div>
+                </div>
                 <p class="white">4 GB SPACE</p>
                 <p class="dark descriptor">20 GB BANDWIDTH</p>
                 <p class="white">100 EMAIL ACCOUNTS</p>
                 <p class="dark descriptor">PHP,ROR,MYSQL</p>
                 <div class="white">
-                    <button type="button">Sign Up</button>
+                    <button type="button" class="signUp">Sign Up</button>
                 </div>
             </div>
             <div class="maxi Hosting">
                 <h2 class="grey title">Maxi Hosting</h2>
-                <p class="price grey">$10.99 <span>/MO</span>
-                </p>
+                <div class="price grey">
+                    $10.99 <span>/MO</span>
+                    <div class="arrow"></div>
+                </div>
                 <p class="white">4 GB SPACE</p>
                 <p class="dark descriptor">20 GB BANDWIDTH</p>
                 <p class="white">100 EMAIL ACCOUNTS</p>
                 <p class="dark descriptor">PHP,ROR,MYSQL</p>
                 <div class="white">
-                    <button type="button">Sign Up</button>
+                    <button type="button" class="signUp">Sign Up</button>
                 </div>
             </div>
         </div>
@@ -125,7 +138,7 @@
                     <li>Filler Text</li>
                 </ul>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, similique?</p>
-                <button type="submit">Shop Now</button>
+                <button type="submit" class="shopNow">Shop Now</button>
             </div>
             <div class="hostServices">
                 <h4>Hosting Services</h4>
@@ -135,7 +148,7 @@
                     <li>Filler Text</li>
                 </ul>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, similique?</p>
-                <button type="submit">Shop Now</button>
+                <button type="submit" class="shopNow">Shop Now</button>
             </div><div class="hostServices">
                 <h4>Hosting Services</h4>
                 <ul>
@@ -144,7 +157,7 @@
                     <li>Filler Text</li>
                 </ul>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, similique?</p>
-                <button type="submit">Shop Now</button>
+                <button type="submit" class="shopNow">Shop Now</button>
             </div><div class="hostServices">
                 <h4>Hosting Services</h4>
                 <ul>
@@ -153,7 +166,7 @@
                     <li>Filler Text</li>
                 </ul>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, similique?</p>
-                <button type="submit">Shop Now</button>
+                <button type="submit" class="shopNow">Shop Now</button>
             </div>
         </div>
 
@@ -167,22 +180,24 @@
 
     <footer>
         <div class="footer">
-            <div class="footLogo">
-                <img src="./images/logo.png" alt="airbox logo">
-            </div>
-            <div class="companyName">
-                <p class="airBox">AIR<span>BOX</span></p>
-                <p>Hosting Provider</p>
-            </div>
-            <div class="copyright">
-                <p>&copy;2013 | PRIVACY POLICY</p>
+            <div class="box1">
+                <div class="footLogo">
+                    <img src="./images/logo.png" alt="airbox logo" class="bottomLogo">
+                </div>
+                <div class="companyName">
+                    <p class="airBox">AIR<span>BOX</span></p>
+                    <p>Hosting Provider</p>
+                </div>
+                <div class="copyright">
+                    <p>&copy;2013 | PRIVACY POLICY</p>
+                </div>
             </div>
             <div class="socials">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-            </div>
+                <img src="./images/google.png" alt="google plus icon" class="icons">
+                <img src="./images/wifi.png" alt="wifi icon" class="icons">
+                <img src="./images/twitter.png" alt="twitter icon" class="icons">
+                <img src="./images/facebook.png" alt="facebook icon" class="icons">
+            </div>   
         </div>
     </footer>
 </body>
